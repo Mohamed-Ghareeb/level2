@@ -1,0 +1,469 @@
+/* Start Global Rulez */
+
+* {
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing : border-box;
+    box-sizing : border-box;
+    font-family: Arial, Tahoma;
+}
+
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* End Global Rulez */
+
+/* Start My FrameWork */
+
+.clearfix {
+    clear: both;
+}
+
+ul {
+    list-style: none;padding: 0;margin: 0;
+}
+.special-heading {
+    position: relative
+}
+
+.special-heading:after {
+    content: "";
+    display: block; 
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 45px;
+    border-bottom: 2px solid #333;
+}
+
+.separetor {
+    border: 1px solid #EEE;
+}
+
+h2, h3, h4 {
+    font-weight: normal;
+}
+
+.navbar,
+.header,
+.services,
+.our-team,
+.testim,
+.our-projects,
+.footer {min-width: 1200px}
+
+/* End My FrameWork */
+
+/* Start Navgation Bar */
+
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 3;
+}
+
+.navbar .brand {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.navbar .links {
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent
+}
+
+.navbar .links li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    cursor: pointer
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+
+    color: #1abc9c;
+    cursor: pointer
+}
+
+.header {
+    background-image: url("../Images/header2.jpg");
+    position: relative;
+}
+
+.header .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header .bx-wrapper {
+  box-shadow : none;
+  border: none;
+  background: none;
+  height: 100%;
+}
+
+.header .bx-wrapper .bx-viewport {
+  height: 100% !important;
+  text-align: center;
+
+}
+
+.header .bx-wrapper .bx-viewport .bxslider {
+    height: 100%;
+}
+
+.header .bx-wrapper .bx-viewport .bxslider li {
+    display: block;
+    color: #FFF;
+}
+
+.header .bx-wrapper .bx-viewport .bxslider li h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold
+}
+
+.header .bx-wrapper .bx-viewport .bxslider li span {
+  color: #1abc9c;
+}
+
+/* End Navgation Bar */
+
+/* Start Services */
+
+.services{
+    padding: 80px 20px 30px;
+}
+.services h2 {
+    margin: 0 0 50px;
+}
+
+.services .item {
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 15px;
+}
+
+.services .item i {
+    color: #1abc9c;
+    float: left;
+    width: 15%;
+    margin-right: 5%;
+    height: 120px;
+    margin-top: 30px;
+}
+
+.services .item .info {
+    width: 80%;
+    float: left
+}
+
+.services .item .info h3 {
+    margin-bottom: 5px;
+    color: #7b7b7b;
+}
+
+.services .item .info p {
+    color: #bdbdbd;
+}
+
+.our-team {
+    margin: 40px  
+}
+
+.our-team .box:first-child {
+    float: left;
+    width: 35%;
+}
+
+.our-team .box p {
+    color: #bdbdbd;
+    line-height: 1.5;
+}
+
+.our-team h2 {
+    padding: 0 0 15px;  
+}
+
+.our-team .box:not(:first-child) {
+    float: left;
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative;
+}
+.our-team .box:not(:first-child) .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 180px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #1abc9c;
+    cursor: pointer;
+    opacity: 0.9;
+    display: none;
+}
+
+.our-team .box:not(:first-child):hover .overlay {
+    display: block;
+}
+
+.our-team .box:not(:first-child) img {
+    width: 100%;
+}
+
+/* End Services */
+
+/* Start Testimonials */
+
+.testim {
+    background-image:url("../Images/testimonials.jpg");
+    -webkit-background-size : cover;
+    -moz-background-size : cover;
+    -o-background-size : cover;
+    background-size : cover;
+    height: 600px;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    padding: 80px 0;
+}
+
+.testim .t-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.75
+}
+
+.testim h2 {
+    font-size: 40px;
+    margin: 40px;
+    font-weight: bold;
+}
+
+.testim q {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #D0D0D0;
+}
+
+.testim p {
+    font-size: 25px;
+    margin-top: 70px;
+    color: #1abc9c;
+}
+
+.testim .slider > div {
+    display: none;
+}
+
+.testim .slider .active {
+    display: block;
+}
+
+/* End Testimonials */
+
+/* Start Projects */
+
+.our-projects {
+    padding: 40px 0;
+}
+
+.our-projects ul {
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.our-projects ul li {
+    display: inline-block;
+    border: 2px Solid #AAA;
+    color: #AAA;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 8px
+}
+.our-projects ul li.selected {
+    background-color: #1abc9c;
+    color: #FFF;
+    border: 2px solid #1abc9c;
+}
+
+.our-projects .gallary {
+    overflow: hidden
+}
+
+.our-projects .gallary .row > div {
+    width: 32.666666666667%;
+    float: left;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.our-projects .gallary .row > div .over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 232px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #1abc9c;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.our-projects .gallary .row > div .over span {
+    
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    padding: 15px
+}
+
+.our-projects .gallary .row > div .heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    display: none
+}
+
+.our-projects .gallary .row > div:hover .over, 
+.our-projects .gallary .row > div:hover .heart {
+    display: block
+} 
+
+.our-projects .gallary .row > div:nth-child(2) {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.our-projects .gallary .row > div img {
+    width: 100%;
+}
+
+.our-projects .mix {
+    display: none; 
+}
+
+/* End Projects */
+
+/* Start Footer */
+
+.footer {
+    background-color: #232323;
+    color: #6C6C6C;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.footer .col {
+    width: 25%;
+    float: left;
+}
+
+.footer .col h2 {
+    font-size: 18px;
+    color:#FFF;
+}
+
+.footer .col p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.footer .col i {
+    margin-bottom: 30px;
+    display: inline-block;
+    color: #979797;
+    width: 45px;
+    border: 1px solid #6C6C6C;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.footer .tags span {
+    display: inline-block;
+    padding: 10px;
+    color: #E7E7E7;
+    border: 1px solid #6C6C6C;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.footer .recent div {
+    overflow: hidden;
+    margin-bottom: 15px
+}
+
+.footer .recent div img {
+    float: left;
+    margin-right: 15px
+}
+
+.footer .recent div h4 {
+    color:#CCC;
+    margin: 8px 0;
+}
+
+.footer .blog ul li {
+    padding: 15px;
+    border-bottom: 2px solid #6C6C6C;
+    color: #E7E7E7;
+}
+
+.footer .col .copyright {
+    margin-top: 20px;
+}
+
+/* End Footer */
+
+
